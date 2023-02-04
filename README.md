@@ -31,3 +31,9 @@ So make sure you have enough disk space.
 In Android Studio’s main window, click on the three vertical dots at the top right and select Virtual Device Manager.
 
 ![](src/1.png)
+
+Then, click on Create Device, at the top left of the window.
+
+Now select a Nexus 5X then click Next.
+
+![](src/2.png)
