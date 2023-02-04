@@ -29,4 +29,5 @@ So make sure you have enough disk space.
 
 # Create and launch a virtual device
 In Android Studio’s main window, click on the three vertical dots at the top right and select Virtual Device Manager.
+
 ![](src/1.png)
