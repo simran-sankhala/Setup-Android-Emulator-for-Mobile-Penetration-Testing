@@ -11,5 +11,5 @@ On the emulator, you can either install your target apps directly using the Goog
 
 There are a number of Android emulators around, such as Genymotion or Anbox. However, the one that worked best for me is Android Studio. 
 It’s actually a full development environment for Android apps, that includes an Android emulator. This is how you install it on a Linux system:
-Get the app from the ![Android-Studio](https://developer.android.com/studio/index.html#downloads) download page and save it to your home directory. 
+Get the app from the ![](https://developer.android.com/studio/index.html#downloads) download page and save it to your home directory. 
 
