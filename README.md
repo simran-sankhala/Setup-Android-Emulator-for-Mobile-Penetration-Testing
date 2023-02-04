@@ -17,11 +17,11 @@ You will get a file called android-studio-2022.1.1.20-linux.tar.gz (note that th
 
 Unpack it with:
 ```bash
-sudo tar -xvzf android-studio-2022.1.1.20-linux.tar.gz
+$ sudo tar -xvzf android-studio-2022.1.1.20-linux.tar.gz
 ```
 ```bash
-cd into android-studio/bin then run:
-./studio.sh
+$ cd android-studio/bin
+$ ./studio.sh
 ```
 This completes the download and installs the full Android Studio application. 
 A standard install takes up 6 Gb, but after creating a device, the install will take up 12 Gb. 
