@@ -13,3 +13,19 @@ There are a number of Android emulators around, such as Genymotion or Anbox. How
 It’s actually a full development environment for Android apps, that includes an Android emulator. This is how you install it on a Linux system:
 Get the app from the [Android Studio](https://developer.android.com/studio/index.html#downloads) download page and save it to your home directory. 
 
+You will get a file called android-studio-2022.1.1.20-linux.tar.gz (note that the version number will likely have changed by the time you read this article).
+
+Unpack it with:
+```bash
+sudo tar -xvzf android-studio-2022.1.1.20-linux.tar.gz
+```
+```bash
+cd into android-studio/bin then run:
+./studio.sh
+```
+This completes the download and installs the full Android Studio application. 
+A standard install takes up 6 Gb, but after creating a device, the install will take up 12 Gb. 
+So make sure you have enough disk space.
+
+# Create and launch a virtual device
+In Android Studio’s main window, click on the three vertical dots at the top right and select Virtual Device Manager.
