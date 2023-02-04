@@ -57,3 +57,95 @@ To start the emulator, select the device in the list and click the start (triang
 #### Your device starts up and appears in it own window.
 
 ![](src/7.png)
+
+Now you need to make sure your wifi access is functional.
+
+Click on the surface of the device and move your mouse or pointer upwards. Then click on the Settings icon at the top right of the display.
+
+![](src/8.png)
+
+Select Network & Internet.
+
+Then click on Wi-Fi. Make sure Use Wi-Fi is on and AndroidWifi is indicated as Connected.
+
+![](src/9.png)
+
+If the connection is down, you may want to check your proxy settings. To do this, click on the three dots at the bottom of the side bar.
+
+In the box that shows up, select the Settings panel, then in the Proxy section, make sure No proxy is selected. 
+Click Apply if required. Then close the box. You should be good to go.
+
+![](src/10.png)
+
+# Set your virtual device’s CA certificate
+
+Now you need to install a CA certificate (as a reminder, this is digital certificate that your virtual device’s web browser will need to access web sites using https).
+
+Start Burp Suite, select the Proxy tab and the Options sub-tab.
+
+Click the Import / export CA certificate button.
+
+![](src/11.png)
+
+Under Export, choose Certificate in DER format and click the Next button.
+
+![](src/12.png)
+
+Save the file and name it cert.cer. Now you can exit Burp Suite.
+
+![](src/13.png)
+
+Open the file manager and drag the cert file onto the Android emulator device window.
+
+![](src/14.png)
+
+In the Android emulator device window, go to the Settings app. Then scroll down to the Security & location panel
+
+![](src/15.png)
+
+Go to the Encryption & credentials section. Then click Install from SD Card.
+
+![](src/16.png)
+
+From the burger menu at the top left, select Downloads. Then choose cert.cer.
+
+![](src/17.png)
+
+Name the certificate Burp then click OK.
+
+When you get the message "Attention. Before you can use credential storage, your device needs to have a secure lock screen", click SET LOCK.
+
+![](src/18.png)
+
+Then select Continue without fingerprint then PIN. In the Secure start-up screen that comes up, click NO.
+
+In the following Set screen lock screen, type in a PIN code then click NEXT. Then re-enter your PIN and click CONFIRM.
+
+![](src/19.png)
+
+In Notifications, select Don’t show notifications at all then click DONE.
+
+![](src/20.png)
+
+You’re back in the Encryption & credentials panel. Now to check the certificate is properly set, click on User credentials. 
+You should see the Burp credential as the only item in the list.
+
+![](src/21.png)
+
+# Configure your device’s proxy settings
+
+Still in the Android emulator device window, click on the three dots at the bottom of the side bar.
+
+In the box that comes up, go to the Settings panel. Then in the proxy section, make sure Use Android Studio HTTP proxy settings is unchecked. Then select Manual proxy configuration. In the Host name field, type `127.0.0.1` and in the Port number field, enter `8080`. Then click Apply. Then close the window.
+
+![](src/22.png)
+
+# Start hacking
+
+To check your settings, start Burp Suite, then go to the Proxy tab and the Intercept sub-tab. Turn Intercept on. 
+Then in the Android emulator device window, start an app and interact with it.
+
+In the below example, I’m using The Comment App from the vAPI vulnerable training API. I’m creating a new user. 
+The app sends a POST request that is intercepted by Burp and displayed in the Intercept screen.
+
+![](src/23.png)
