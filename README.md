@@ -37,3 +37,23 @@ Then, click on Create Device, at the top left of the window.
 Now select a Nexus 5X then click Next.
 
 ![](src/2.png)
+
+Next, click on Pie. This will download the system image.
+
+![](src/3.png)
+
+With Pie selected in the list, you can now click on Next.
+
+![](src/4.png)
+
+Check the configuration and give your device a personalized name if you want to. Then click Finish.
+
+![](src/5.png)
+
+To start the emulator, select the device in the list and click the start (triangle) button.
+
+![](src/6.png)
+
+#### Your device starts up and appears in it own window.
+
+![](src/7.png)
